@@ -1,0 +1,61 @@
+.body{
+    padding:2%;
+}
+form{
+    display:inline;
+    text-align:center;
+}
+.row{
+    border:0px;
+    text-align:center;
+    width:100%;
+}
+.col-sm-4,.col-sm-8,.noline{
+    border:0px;
+}
+select.custom-select{
+    padding:0.5%;
+}
+.borderline{
+    border:0.3px solid black;
+    padding:5px;
+}
+.form-control{
+    display:inline;
+}
+.center{
+    text-align:center;
+}
+.input{
+    width:50%;
+}
+.button{
+    width:30%;
+}
+.loginform{
+    position: absolute;
+    height:50%;
+    border-radius: 5px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: white;
+    padding: 30px;
+}
+.centerwithspace{
+    text-align:center;
+    margin:10%;
+}
+.nodecoration:hover{
+    text-decoration:none;
+}
+.centerheight{
+    height:60%;
+}
+.centertextheight{
+    padding: 65px 0;
+    text-align: center;
+}
