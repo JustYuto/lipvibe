@@ -1,3 +1,5 @@
+-- test
+
 CREATE TABLE DEPARTMENT( 
     departmentID CHAR(5) NOT NULL, 
     deptName VARCHAR2(20) NOT NULL, 
