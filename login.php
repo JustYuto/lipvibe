@@ -7,7 +7,7 @@
 <body style="background-color:lightgrey">
 	<div>
 		<form class="loginform" action="login_process.php" method="POST">
-			<h2>WELCOME TO FLEXIS</h2>
+			<h2>WELCOME TO FLEXIS!</h2>
 			<div class="form-group">
 				<input type="email" class="form-control" name="email" placeholder="Employee ID *">
 			</div>
