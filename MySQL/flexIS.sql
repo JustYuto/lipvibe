@@ -2,7 +2,7 @@ CREATE DATABASE IF NOT EXISTS `flexIS`;
 USE `flexIS`;
 
 CREATE TABLE EMPLOYEE(     
-    employeeID INT(5) NOT NULL AUTO_INCREMENT, 
+    employeeID VARCHAR(5) NOT NULL, 
     password VARCHAR(30) NOT NULL, 
     name VARCHAR (30) NOT NULL, 
     email VARCHAR (30) NOT NULL, 
