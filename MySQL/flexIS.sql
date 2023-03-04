@@ -8,7 +8,7 @@ CREATE TABLE EMPLOYEE(
     email VARCHAR (30) NOT NULL, 
     position VARCHAR (20) NOT NULL, 
     FWAStatus VARCHAR (15) NOT NULL,  
-    departmentID VARCHAR (5) NOT NULL, 
+    departmentID VARCHAR (5), 
     supervisorID VARCHAR (5), 
     CONSTRAINT EMP_PK PRIMARY KEY (employeeID), 
     CONSTRAINT EMP_FK1 FOREIGN KEY (supervisorID) REFERENCES EMPLOYEE(employeeID) on delete cascade
@@ -17,7 +17,7 @@ CREATE TABLE EMPLOYEE(
 CREATE TABLE DEPARTMENT( 
     departmentID VARCHAR(5) NOT NULL, 
     deptName VARCHAR(20) NOT NULL, 
-    employeeID VARCHAR(5) NOT NULL,
+    employeeID VARCHAR(5),
     CONSTRAINT DEPARTMENT_PK PRIMARY KEY (departmentID)
 ); 
 
@@ -29,7 +29,7 @@ CREATE TABLE FWA_Rquest(
     reason VARCHAR(255) not null, 
     status VARCHAR(20) not null CHECK (status IN('Failed','Accepted','Progress')), 
     comment VARCHAR(255), 
-    employeeID VARCHAR(5) not null, 
+    employeeID VARCHAR(5), 
     CONSTRAINT fwa_Rqu_PK2 PRIMARY KEY (requestID)
 ); 
 
