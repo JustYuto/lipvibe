@@ -27,7 +27,7 @@ CREATE TABLE FWA_Rquest(
     workType VARCHAR(30) not null CHECK (workType IN('Flexi-hour', 'Work-from-home','Hybrid')), 
     description VARCHAR(255) not null, 
     reason VARCHAR(255) not null, 
-    status VARCHAR(20) not null CHECK (status IN('Failed','Accepted','Progress')), 
+    status VARCHAR(20) not null CHECK (status IN('Rejected','Accepted','Pending')), 
     comment VARCHAR(255), 
     employeeID VARCHAR(5), 
     CONSTRAINT fwa_Rqu_PK2 PRIMARY KEY (requestID)
