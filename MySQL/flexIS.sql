@@ -17,7 +17,7 @@ CREATE TABLE EMPLOYEE(
 CREATE TABLE DEPARTMENT( 
     departmentID VARCHAR(5) NOT NULL, 
     deptName VARCHAR(20) NOT NULL, 
-    employeeID INT(5),
+    employeeID VARCHAR(5),
     CONSTRAINT DEPARTMENT_PK PRIMARY KEY (departmentID)
 ); 
 
@@ -29,7 +29,7 @@ CREATE TABLE FWA_Rquest(
     reason VARCHAR(255) not null, 
     status VARCHAR(20) not null CHECK (status IN('Rejected','Accepted','Pending')), 
     comment VARCHAR(255), 
-    employeeID INT(5), 
+    employeeID VARCHAR(5), 
     CONSTRAINT fwa_Rqu_PK2 PRIMARY KEY (requestID)
 ); 
 
