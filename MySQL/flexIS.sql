@@ -6,7 +6,7 @@ CREATE TABLE EMPLOYEE(
     password VARCHAR(30) NOT NULL, 
     name VARCHAR (30) NOT NULL, 
     email VARCHAR (30) NOT NULL, 
-    position VARCHAR (20) NOT NULL, 
+    position VARCHAR (20) NOT NULL CHECK (position IN('Employee', 'Supervisor','HR Admin')), 
     FWAStatus VARCHAR (15) NOT NULL,  
     departmentID VARCHAR (5), 
     supervisorID VARCHAR (5), 
