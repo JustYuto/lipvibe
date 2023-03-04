@@ -13,8 +13,8 @@ CREATE TABLE EMPLOYEE(
     email VARCHAR (30) NOT NULL, 
     position VARCHAR (20) NOT NULL, 
     FWAStatus VARCHAR (15) NOT NULL,  
-    departmentID CHAR(5) NOT NULL, 
-    supervisorID CHAR(5), 
+    departmentID VARCHAR(5) NOT NULL, 
+    supervisorID VARCHAR(5), 
     CONSTRAINT EMP_PK PRIMARY KEY (employeeID), 
     CONSTRAINT EMP_FK1 FOREIGN KEY (supervisorID) REFERENCES EMPLOYEE(employeeID) on delete cascade
 ); 
